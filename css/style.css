@@ -443,7 +443,7 @@
 .fh5co-books {
   margin-bottom: 122px; }
   .fh5co-books .universal-h2 {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     padding-bottom: 20px; }
   .fh5co-books .books-brand-button {
     text-align: center; }
@@ -1103,18 +1103,15 @@
 
 /* Scrolling Text Section */
 .scrolling-text {
-    background-color: #f4f4f4; /* Light background for contrast */
     overflow: hidden; /* Hide the overflow of the scrolling text */
     white-space: nowrap;
     padding: 10px 0;
-    border-top: 1px solid #ddd;
-    border-bottom: 1px solid #ddd;
 }
 
 .scrolling-text__content {
     display: inline-block;
     animation: scroll-left 15s linear infinite; /* Animation for scrolling */
-    font-size: 1.2em;
+    font-size: 1.4em;
     color: #333;
     font-weight: bold;
 }
@@ -1130,7 +1127,7 @@
 }
 @media (max-width: 768px) {
     .scrolling-text__content {
-        font-size: 1em; /* Slightly smaller font size for mobile */
+        font-size: 1.1em; /* Slightly smaller font size for mobile */
     }
     @keyframes scroll-left {
       0% {
