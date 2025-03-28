@@ -152,7 +152,7 @@
   position: relative;
   display: flex;
   align-items: flex-end;
-  background-image: url("../images/top-banner-bckg.jpg");
+  background-image: url("../images/about-me-bckg.jpg");
   background-position: center;
   background-size: cover; }
   .fh5co-top-banner::after {
@@ -206,12 +206,12 @@
           font-size: 14px; } }
   .top-banner__inner .top-banner__h2 {
     font-size: 68px;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     color: #fff;
     font-family: "Calisto-MT-Bold"; }
     @media (max-width: 1250px) {
       .top-banner__inner .top-banner__h2 {
-        font-size: 30px; } }
+        font-size: 25px; } }
     @media (max-width: 768px) {
       .top-banner__inner .top-banner__h2 {
         font-size: 25px; } }
@@ -222,9 +222,12 @@
         margin-top: 0; } }
   .top-banner__inner .top-banner__text-down {
     margin-bottom: 20px;
-    padding-left: 27%; }
+    padding-left: 10%; }
     .top-banner__inner .top-banner__text-down .top-banner__h2 {
       margin-bottom: 10px; }
+      @media (max-width: 1370px) {
+        .top-banner__inner .top-banner__text-down .top-banner__h2 {
+          margin-bottom: 0; } }
       @media (max-width: 768px) {
         .top-banner__inner .top-banner__text-down .top-banner__h2 {
           margin-bottom: 0; } }
