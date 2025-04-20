@@ -1141,3 +1141,41 @@
       }
   }
 }
+
+/* WhatsApp Broadcast Banner */
+.whatsapp-banner {
+	background-color: #25d366; /* WhatsApp green */
+	color: #fff;
+	padding: 20px 0;
+	text-align: center;
+	font-family: "Calisto-MT-Bold";
+  position: relative;
+  margin: 80px 0 80px; }
+  @media (max-width: 1250px) {
+    .whatsapp-banner {
+      margin: 50px 0; } }
+  @media (max-width: 992px) {
+    .whatsapp-banner {
+      margin: 35px 0; }
+}
+
+.whatsapp-banner__text {
+	font-size: 1.2em;
+	margin-bottom: 10px;
+}
+
+.whatsapp-banner__button {
+	background-color: #fff;
+	color: #25d366;
+	padding: 10px 20px;
+	font-size: 1em;
+	text-decoration: none;
+	border-radius: 5px;
+	font-weight: bold;
+	transition: background-color 0.3s, color 0.3s;
+}
+
+.whatsapp-banner__button:hover {
+	background-color: #1da851; /* Slightly darker green */
+	color: #fff;
+}
