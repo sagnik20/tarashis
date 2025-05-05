@@ -1109,24 +1109,33 @@
     overflow: hidden; /* Hide the overflow of the scrolling text */
     white-space: nowrap;
     padding: 10px 0;
+    position: relative;
 }
 
 .scrolling-text__content {
     display: inline-block;
-    animation: scroll-left 15s linear infinite; /* Animation for scrolling */
+    animation: scroll-left 20s linear infinite; /* Animation for scrolling */
     font-size: 1.4em;
     color: #333;
     font-weight: bold;
+    white-space: nowrap;
 }
+
+/* Duplicate the content for seamless scrolling */
+/* .scrolling-text__content::after {
+  content: attr(data-text); 
+  display: inline-block;
+  padding-left: 50px;
+} */
 
 /* Keyframes for scrolling animation */
 @keyframes scroll-left {
-    0% {
-        transform: translateX(450%); /* Start from the right */
-    }
-    100% {
-        transform: translateX(-100%); /* Move to the left */
-    }
+  0% {
+      transform: translateX(250%); /* Start just outside the right edge */
+  }
+  100% {
+      transform: translateX(-100%); /* Move completely out of the left edge */
+  }
 }
 @media (max-width: 768px) {
     .scrolling-text__content {
