@@ -444,7 +444,7 @@
   outline: none; }
 
 .fh5co-books {
-  margin-bottom: 122px; }
+  margin-bottom: 32px; }
   .fh5co-books .universal-h2 {
     margin-bottom: 30px;
     padding-bottom: 20px; }
@@ -1183,7 +1183,7 @@
 }
 
 .other-publisher-section {
-    margin: 40px 0 40px 0;
+    margin: 40px auto 40px auto;
     padding: 30px 20px 20px 20px;
     background: #f3f7fa;
     border: 2px solid #c18f59;
@@ -1205,4 +1205,83 @@
     flex-wrap: wrap;
     gap: 24px;
     justify-content: center;
+}
+
+.available-at-stores {
+    background: #f8f5ef;
+    border: 1.5px solid #c18f59;
+    border-radius: 10px;
+    margin: 32px auto 32px auto; /* Make top and bottom margin equal for symmetry */
+    padding: 28px 18px 18px 18px;
+    max-width: 600px;
+    box-shadow: 0 2px 12px rgba(193,143,89,0.07);
+    text-align: center;
+}
+.stores-heading {
+    color: #c18f59;
+    font-size: 1.3em;
+    margin-bottom: 10px;
+    font-family: "Calisto-MT-Bold", serif;
+}
+.stores-desc {
+    color: #444;
+    font-size: 1em;
+    margin-bottom: 12px;
+}
+.stores-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.stores-list li {
+    font-size: 1em;
+    color: #222;
+    margin: 12px 0;
+    padding-left: 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+.store-icon {
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
+    margin-right: 4px;
+}
+.store-link {
+    color: #081b01;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+.stores-list li:before {
+    content: "📚";
+}
+.store-link:hover {
+    color: #c18f59;
+    text-decoration: underline;
+}
+.store-separator {
+    color: #bbb;
+    margin: 0 4px;
+}
+@media (max-width: 600px) {
+    .available-at-stores {
+        padding: 18px 6px 12px 6px;
+        font-size: 0.98em;
+        margin: 24px auto 24px auto; /* Symmetric margin for mobile */
+    }
+    .stores-heading {
+        font-size: 1.1em;
+    }
+    .stores-list li {
+        font-size: 0.98em;
+        flex-direction: column;
+        gap: 2px;
+    }
+    .store-separator {
+        display: none;
+    }
 }
