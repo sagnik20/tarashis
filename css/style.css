@@ -1181,3 +1181,28 @@
 	background-color: #1da851; /* Slightly darker green */
 	color: #fff;
 }
+
+.other-publisher-section {
+    margin: 40px 0 40px 0;
+    padding: 30px 20px 20px 20px;
+    background: #f3f7fa;
+    border: 2px solid #c18f59;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px rgba(193,143,89,0.07);
+}
+
+.other-publisher-heading {
+    color: #c18f59;
+    font-size: 1.5em;
+    font-family: "Calisto-MT-Bold";
+    margin-bottom: 25px;
+    text-align: center;
+    letter-spacing: 0.5px;
+}
+
+.other-publisher-books {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+}
