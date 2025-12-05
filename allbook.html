@@ -65,6 +65,34 @@
 
 		gtag('config', 'G-D6V5QN43G0');
 	</script>
+
+	<!-- JSON-LD Schema Markup for Books Collection -->
+	<script type="application/ld+json">
+	{
+	  "@context": "https://schema.org",
+	  "@type": "CollectionPage",
+	  "name": "Books by Tarashis Gangopadhyay",
+	  "description": "Complete collection of spiritual books by Tarashis Gangopadhyay including bestsellers and latest publications in Bengali and English.",
+	  "url": "https://www.tarashisgangopadhyay.in/allbook.html",
+	  "mainEntity": {
+		"@type": "Person",
+		"name": "Tarashis Gangopadhyay",
+		"url": "https://www.tarashisgangopadhyay.in/about.html",
+		"jobTitle": "Author",
+		"sameAs": [
+		  "https://www.facebook.com/tarashisgangopadhyay",
+		  "https://www.instagram.com/tarashisgangopadhyayofficial",
+		  "https://www.youtube.com/@tarashisgangopadhyayofficial",
+		  "https://www.amazon.in/stores/Tarashis-Gangopadhyay/author/B0FNM44HGG"
+		]
+	  }
+	}
+	</script>
+
+	<!-- Individual Book Schemas (Auto-populated) -->
+	<script type="application/ld+json" id="booksSchema">
+	[]
+	</script>
 </head>
 
 <body>
@@ -117,6 +145,26 @@
 		</div>
 	</section>
 	<!-- Search Bar end -->
+
+	<!-- No Match Banner -->
+	<section class="search-banner no-match-banner" id="noMatchBanner" style="display: none;">
+		<div class="site-container">
+			<div class="banner-content">
+				<p>📚 No books found. Try removing some letters from your search or check the spelling.</p>
+			</div>
+		</div>
+	</section>
+	<!-- No Match Banner end -->
+
+	<!-- Generic Search Banner -->
+	<section class="search-banner generic-search-banner" id="genericSearchBanner" style="display: none;">
+		<div class="site-container">
+			<div class="banner-content">
+				<p>🔍 Please search for a specific book name from Tarashis Gangopadhyay's collection. Below are all available books:</p>
+			</div>
+		</div>
+	</section>
+	<!-- Generic Search Banner end -->
 
 	<!-- Discount Banner -->
 	<section class="discount-banner">
@@ -791,6 +839,7 @@
 		</div>
 	</footer>
 	<!-- Footer end -->
+	<script src="js/book-schema.js"></script>
 	<script>
 		window.onscroll = function () {
 			var searchBar = document.getElementById("searchBar");
