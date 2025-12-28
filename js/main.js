@@ -82,7 +82,7 @@ $(window).scroll(function(e){
 /* Discount Calculation Function */
 /* DISCOUNT PERCENTAGE - Change this value to update discount across all pages */
 /* Set to 0 to show original price only (no discount effect) */
-var DISCOUNT_PERCENTAGE = 20;
+var DISCOUNT_PERCENTAGE = 0;
 
 function applyBookDiscounts() {
 	// Get all price elements
