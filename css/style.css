@@ -12,6 +12,10 @@
   src: url(../fonts/Calisto-MT-Bold.ttf); }
 
 /* Colors */
+/* Discount Configuration - Change this value to update discount across all pages */
+:root {
+  --discount-percentage: 20; }
+
 /* Universal style */
 * {
   margin: 0;
@@ -460,6 +464,48 @@
     .fh5co-books {
       margin-bottom: 60px; } }
 
+/* Section-specific elegant styling */
+.fh5co-books-latest {
+  background: linear-gradient(135deg, #fffbf7 0%, #fff9f3 100%);
+  border-left: 5px solid #e8a87c;
+  padding-left: 20px;
+  box-shadow: inset 0 0 30px rgba(232, 168, 124, 0.08); }
+
+.fh5co-books-travel {
+  background: linear-gradient(135deg, #f0f9f8 0%, #e8f6f4 100%);
+  border-left: 5px solid #4a9d83;
+  padding-left: 20px;
+  box-shadow: inset 0 0 30px rgba(74, 157, 131, 0.08); }
+
+.fh5co-books-eternal {
+  background: linear-gradient(135deg, #faf7fc 0%, #f5f0fa 100%);
+  border-left: 5px solid #8b6ba8;
+  padding-left: 20px;
+  box-shadow: inset 0 0 30px rgba(139, 107, 168, 0.08); }
+
+.fh5co-books-death {
+  background: linear-gradient(135deg, #f0f6fb 0%, #e8f3f9 100%);
+  border-left: 5px solid #3d6a8c;
+  padding-left: 20px;
+  box-shadow: inset 0 0 30px rgba(61, 106, 140, 0.08); }
+
+.fh5co-books-miracles {
+  background: linear-gradient(135deg, #ffe8dd 0%, #fce0d3 100%);
+  border-left: 5px solid #d17a63;
+  padding-left: 20px;
+  box-shadow: inset 0 0 30px rgba(209, 122, 99, 0.08); }
+
+/* Mobile responsiveness for section styles */
+@media (max-width: 668px) {
+  .fh5co-books-latest,
+  .fh5co-books-travel,
+  .fh5co-books-eternal,
+  .fh5co-books-death,
+  .fh5co-books-miracles {
+    padding-left: 15px;
+    border-left: 4px solid;
+    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.04); } }
+
 .books {
   display: flex;
   justify-content: space-between;
@@ -471,7 +517,14 @@
 
 .single-book {
   margin-bottom: 20px;
-  text-align: center; }
+  text-align: center;
+  padding: 12px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.6);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.3s ease; }
+  .single-book:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); }
   .single-book .single-book__img {
     position: relative;
     display: block;
@@ -498,11 +551,46 @@
   .single-book .single-book__title {
     margin: 19px 0 10px;
     font-size: 16px; }
-  .single-book .single-book__price {
-    font-size: 18px;
-    font-weight: 600;
+  .single-book .single-book__price-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    margin-top: 2px; }
+  .single-book .single-book__price-original {
+    font-size: 13px;
+    color: #888;
+    text-decoration: line-through;
+    text-decoration-thickness: 2px;
+    text-decoration-color: #888;
+    font-weight: 500;
+    letter-spacing: 0.3px; }
+  .single-book .single-book__price-discounted {
+    font-size: 21px;
+    font-weight: 700;
     font-style: italic;
-    color: #c18f59; }
+    color: #c18f59;
+    line-height: 1; }
+  .single-book .single-book__discount-badge {
+    font-size: 11px;
+    font-weight: 700;
+    color: #ffffff;
+    background-color: #d17a63;
+    padding: 4px 10px;
+    border-radius: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    display: inline-block; }
+  @media (max-width: 668px) {
+    .single-book .single-book__price-wrapper {
+      gap: 5px; }
+    .single-book .single-book__price-discounted {
+      font-size: 18px; }
+    .single-book .single-book__price-original {
+      font-size: 11px; }
+    .single-book .single-book__discount-badge {
+      font-size: 10px;
+      padding: 3px 8px; } }
   @media (max-width: 1250px) {
     .single-book {
       margin-right: 10px; }
