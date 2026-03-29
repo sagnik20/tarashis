@@ -495,13 +495,20 @@
   padding-left: 20px;
   box-shadow: inset 0 0 30px rgba(209, 122, 99, 0.08); }
 
+.fh5co-books-english {
+  background: linear-gradient(135deg, #f0f8fc 0%, #e8f5fa 100%);
+  border-left: 5px solid #2b7db9;
+  padding-left: 20px;
+  box-shadow: inset 0 0 30px rgba(43, 125, 185, 0.08); }
+
 /* Mobile responsiveness for section styles */
 @media (max-width: 668px) {
   .fh5co-books-latest,
   .fh5co-books-travel,
   .fh5co-books-eternal,
   .fh5co-books-death,
-  .fh5co-books-miracles {
+  .fh5co-books-miracles,
+  .fh5co-books-english {
     padding-left: 15px;
     border-left: 4px solid;
     box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.04); } }
